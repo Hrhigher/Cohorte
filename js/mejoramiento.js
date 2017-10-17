@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
         // seleccionar todos los campos de tipo input
         var $inputs = $(":input");
         //desactivar los campos de tipo input y mandar el mensaje de carga
-        $inputs.prop("disabled", true);
+        $inputs.prop("enabled", true);
         $("body").append("<div id='fondo-opaco'><div class='alerta'><p id='carga'>Enviando datos...</p></div></div>");
         // enviar los datos con ajax a google
         request = $.ajax({
