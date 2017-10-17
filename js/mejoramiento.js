@@ -91,7 +91,7 @@ jQuery(document).ready(function($) {
         $("body").append("<div id='fondo-opaco'><div class='alerta'><p id='carga'>Enviando datos...</p></div></div>");
         // enviar los datos con ajax a google
         request = $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbyDCCidYy1Ykjvb5ib1DPd_1OKPPCW15U45gWwEnExNEpjEy9Y/exec",
+            url: "https://script.google.com/macros/s/AKfycbxOqEIp49whap6KiP6eIU5ciF5aSndaY4pA_xn1Qqr0j5hka0Ly/exec",
             type: "post",
             data: serializedData
         });
