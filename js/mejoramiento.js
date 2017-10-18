@@ -87,14 +87,13 @@ jQuery(document).ready(function($) {
         // seleccionar todos los campos de tipo input
         var $inputs = $(":input");
         //desactivar los campos de tipo input y mandar el mensaje de carga
-        $inputs.prop("enabled", true);
+        $inputs.prop("disabled", true);
         $("body").append("<div id='fondo-opaco'><div class='alerta'><p id='carga'>Enviando datos...</p></div></div>");
         // enviar los datos con ajax a google
         request = $.ajax({
             url: "https://script.google.com/macros/s/AKfycbxOqEIp49whap6KiP6eIU5ciF5aSndaY4pA_xn1Qqr0j5hka0Ly/exec",
             type: "post",
             data: serializedData
-        });
         // se regresa cuando el envío fue exitoso
         request.done(function(response, textStatus, jqXHR) {
             // log a message to the console
